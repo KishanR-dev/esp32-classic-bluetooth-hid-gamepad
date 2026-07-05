@@ -36,11 +36,16 @@ The current implementation focuses on:
 ## Build and Flash (Windows, ESP-IDF PowerShell)
 
 ```powershell
-cd e:\Projects\BlackboxIDE\WaaC\esp32-classic-hid
+# From the project root directory:
 idf.py set-target esp32
 idf.py build
-idf.py -p COM3 flash monitor
+idf.py -p <PORT> flash monitor
 ```
+
+Examples for `<PORT>`:
+- Windows: `COM5`
+- Linux: `/dev/ttyUSB0`
+- macOS: `/dev/cu.usbserial-0001`
 
 ## Runtime Validation Checklist
 
