@@ -1,0 +1,11 @@
+# ESP-IDF build artifacts
+build/
+sdkconfig
+sdkconfig.old
+
+# Common editor/system files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
